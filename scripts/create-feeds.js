@@ -11,16 +11,16 @@ const { toSlug } = require('../lib/slug');
     const feed = new Feed({
       title: 'Tiny Helpers',
       description,
-      id: 'https://tiny-helpers.dev/',
-      link: 'https://tiny-helpers.dev/',
+      id: 'https://toolunity-helper.vercel.app/',
+      link: 'https://toolunity-helper.vercel.app/',
       language: 'en',
       image: 'http://example.com/image.png',
-      favicon: 'https://tiny-helpers.dev/favicon.ico',
+      favicon: 'https://toolunity-helper.vercel.app/favicon.ico',
       copyright: `All rights reserved ${new Date().getUTCFullYear()}, Stefan Judis`,
       generator: 'Feed for tiny-helpers.dev', // optional, default = 'Feed for Node.js'
       feedLinks: {
-        atom: 'https://tiny-helpers.dev/feed.atom',
-        rss: 'https://tiny-helpers.dev/feed.xml',
+        atom: 'https://toolunity-helper.vercel.app/feed.atom',
+        rss: 'https://toolunity-helper.vercel.app/feed.xml',
       },
       author: {
         name: 'Stefan Judis',
@@ -39,7 +39,7 @@ const { toSlug } = require('../lib/slug');
           description: desc,
           content: `More tools! 🎉🎉🎉 "${name}" is available at ${url}`,
           date: new Date(addedAt),
-          image: `https://tiny-helpers.dev/api/screenshot/?url=${url}`,
+          image: `https://toolunity-helper.vercel.app/api/screenshot/?url=${url}`,
         });
       });
 
